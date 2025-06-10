@@ -31,6 +31,14 @@ html, body {
     text-transform: uppercase;
 }
 
+.social {
+    a {
+        i {
+            color: darkgray;
+        }
+    }
+}
+
 footer {
     bottom: 0;
     padding: 1rem;
