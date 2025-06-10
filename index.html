@@ -1,34 +1,65 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!doctype html>
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Marcelo Sabino</title>
-        <link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>-= Marcelo Sabino =-</title>
+        <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'" type="text/css" media="screen">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     </head>
-    <body>
-        <div class="box">
-            <div class="content">
-                <div class="links">
-                    <h1>Marcelo Sabino</h1>
-                    <h2>Software Developer</h2>
+    <body class="d-flex h-100 text-center body">
+
+        <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="mb-auto">
+            </header>
+            <main class="mb-auto">
+                <div class="avatar">
+                    <img src="img/marcelo_avatar.jpg" alt="marcelo image">
                 </div>
-                <div class="social">
-                    <h2>Follow</h2>
-                    <a href="https://twitter.com/marcelo__sabino" target="_blank" title="Twitter">
-                        <i class="fa-brands fa-square-x-twitter"></i>
-                    </a>
-                    <a href="https://github.com/marcelo__sabino" target="_blank" title="GitHub">
-                        <i class="fa-brands fa-square-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/marcelosabino" target="_blank" title="GitHub">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-                <div class="footer">
-                    Made with <i class="fa-solid fa-heart" style="color: red"></i> using <i class="fa-brands fa-html5" style="color: red"></i> <i class="fa-brands fa-css3-alt" style="color: blue"></i>
-                </div>
+                <h1>Marcelo Sabino</h1>
+                <h2 class="job-title">Software Developer</h2>
+                <span id="typewriter"></span>
+            </main>
+            <div class="social">
+                <h2>Follow</h2>
+                <a href="https://twitter.com/marcelo__sabino" target="_blank" title="Twitter">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+                <a href="https://github.com/marcelo__sabino" target="_blank" title="GitHub">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/marcelosabino" target="_blank" title="GitHub">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
             </div>
+            <footer>
+                Made with <i class="fa-solid fa-heart" style="color: red"></i>
+            </footer>
         </div>
     </body>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+    var app = document.getElementById('typewriter');
+    var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 75,
+    });
+
+    typewriter
+        .pauseFor(2500)
+        .typeString('<font color="purple">console</font>.<font color="green">log</font>(<font color="blue">"I ❤️ coding in JavaScript!"</font>)')
+        .pauseFor(300)
+        .deleteChars(50)
+        .typeString('<font color="blue">class</font> A{<font color="blue">public static void</font> <font color="darkblue">main</font>(<font color="gray">String</font>[]a){<font color="gray">System</font>.out.<font color="blue">println</font>(<font color="green">"Also ❤️ coding in Java!"</font>);}}')
+        .pauseFor(300)
+        .deleteChars(96)
+        .typeString('<font color="blue">print</font>(<font color="green">"And ❤️ coding in Python."</font>)')
+        .pauseFor(300)
+        .deleteChars(36)
+        .typeString('and addicted to ☕')
+        .pauseFor(300)
+        .deleteChars(22)
+        .start();
+    </script>
 </html>
